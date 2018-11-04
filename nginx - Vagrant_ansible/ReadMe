@@ -1,0 +1,2 @@
+Bring up a vm using Vagrant
+Install nginx on vm using Ansible in vagrantfile

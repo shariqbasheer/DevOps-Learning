@@ -1,0 +1,12 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+    - name: Ensure nginx is at latest version
+      apt: name=nginx state=latest
+      # become: enabled
+    - name: start nginx
+      service:
+        name: nginx
+        state: started
+        # become: enabled  
